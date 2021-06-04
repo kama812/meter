@@ -40,6 +40,10 @@ class RequestMonitor extends Monitor
             $isSlow = $duration >= $this->options['slow'];
         }
 
+        if (!$isSlow) {
+            return;
+        }
+
         $content = [
             'uri' => str_replace($event->request->root(), '', $event->request->fullUrl()) ?: '/',
             'method' => $event->request->method(),

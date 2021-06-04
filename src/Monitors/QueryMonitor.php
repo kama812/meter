@@ -38,6 +38,10 @@ class QueryMonitor extends Monitor
 
         $isSlow = isset($this->options['slow']) && $time >= $this->options['slow'];
 
+        if (!$isSlow) {
+            return;
+        }
+
         $caller = $this->getCallerFromStackTrace();
 
         $content = [
