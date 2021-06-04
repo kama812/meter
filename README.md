@@ -9,7 +9,7 @@ Laravel Meter monitors application performance for different things such as requ
 ## Requirements ##
 
  - PHP >= 7.3
- - Laravel 5.5+ | 6
+ - Laravel 5.5+ | 6 | 7 | 8
  
 ## Monitors ## 
 

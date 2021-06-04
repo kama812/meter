@@ -1,6 +1,7 @@
 {
     "name": "sarfraznawaz2005/meter",
     "description": "laravel package to find performance bottlenecks in your laravel application.",
+    "version": "1.1.0",
     "keywords": [
         "laravel",
         "performance",
